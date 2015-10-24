@@ -25,7 +25,7 @@ gulp.task('jshint', function() {
 // minify new images
 gulp.task('imagemin', function() {
 	var imgSrc = './src/images/**/*',
-		imgDst = './build/images';
+		imgDst = './images';
 
 	gulp.src(imgSrc)
 		.pipe(changed(imgDst))
@@ -36,7 +36,7 @@ gulp.task('imagemin', function() {
 // minify html
 gulp.task('htmlpage', function() {
 	var htmlSrc = './src/*.html',
-		htmlDst = './build';
+		htmlDst = './';
 
 	gulp.src(htmlSrc)
 		.pipe(changed(htmlDst))
@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
 		.pipe(concat('script.js'))
 		.pipe(stripDebug())
 		.pipe(uglify())
-		.pipe(gulp.dest('./build/scripts/'));
+		.pipe(gulp.dest('./scripts/'));
 });
 
 // CSS concat, auto-prefix and minify
@@ -60,7 +60,7 @@ gulp.task('styles', function() {
 		.pipe(concat('styles.css'))
 		.pipe(autoprefix('last 2 versions'))
 		.pipe(minifyCSS())
-		.pipe(gulp.dest('./build/styles/'));
+		.pipe(gulp.dest('./styles/'));
 });
 
 // default task
