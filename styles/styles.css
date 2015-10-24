@@ -1,1 +1,1 @@
-body{width:100%}ul li{list-style-type:none}
+.flex,body .flex-container{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}body{width:100%}ul li{list-style-type:none}.nav ul li{display:inline-block}

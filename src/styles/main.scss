@@ -1,6 +1,11 @@
-// main styles
+@import 'extensions';
+
+// main page styles
 body{
 	width: 100%;
+	.flex-container{
+		@extend .flex;
+	}
 }
 
 ul{
@@ -9,3 +14,10 @@ ul{
 	}
 }
 
+.nav{
+	ul{
+		li{
+			display: inline-block;
+		}
+	}
+}
