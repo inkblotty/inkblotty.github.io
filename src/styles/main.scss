@@ -3,10 +3,14 @@
 $mainText: #000;
 $darkBlue: #3616c5;
 
+$paleBack: #f4f4f4;
+
 // main page styles
 *{transition: all 0.2s};
 
 body{
+	background-color: $paleBack;
+
 	font-family: 'Source Sans Pro', sans-serif;
 	width: 100%;
 	overflow: hidden;
@@ -66,7 +70,7 @@ body{
 }
 
 .header{
-	background: url(../images/ink-pic-blue.png) right/contain no-repeat;
+	background: url(../images/ink-vinyl-blue-2.png) right/contain no-repeat;
 
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
