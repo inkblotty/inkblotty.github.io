@@ -1,13 +1,15 @@
 @import 'extensions';
 
 $mainText: #000;
+$darkBlue: #3616c5;
 
 // main page styles
-*{transition: all 0.5s};
+*{transition: all 0.2s};
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 	width: 100%;
+	overflow: hidden;
 
 	.flex-container{
 		@extend .flex;
@@ -44,6 +46,11 @@ body{
 			&:last-child{
 				margin-right: 0;
 			}
+
+			&:hover{
+				color: $darkBlue;
+				cursor: pointer;
+			}
 		}
 	}
 	.underline{
@@ -55,10 +62,6 @@ body{
 		margin: 0 auto;
 		transition: width 0.2s;
 		width: 0;
-
-		.nav:hover &{
-			width: 10em;
-		}
 	}
 }
 
