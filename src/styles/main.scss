@@ -2,22 +2,76 @@
 
 // main page styles
 body{
+	font-family: 'Source Sans Pro', sans-serif;
 	width: 100%;
+
 	.flex-container{
 		@extend .flex;
+		margin: 0 auto;
 	}
-}
 
-ul{
-	li{
-		list-style-type: none;
+	ul{
+		padding: 0;
+
+		li{
+			list-style-type: none;
+			padding: 0;
+		}
 	}
+
 }
 
 .nav{
+	width: 100%;
 	ul{
 		li{
 			display: inline-block;
+			margin-right: 2em;
+			text-transform: uppercase;
+
+			&:last-child{
+				margin-right: 0;
+			}
 		}
 	}
+}
+
+.header{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	letter-spacing: 0.2em;
+
+	h1{
+		letter-spacing: 0.2em;
+		margin-left: 5%;
+
+		span{
+			font-family: 'Muli', sans-serif;
+			font-size: 0.5em;
+			font-weight: 300;
+			line-height: 3em;
+			margin-left: 2em;
+		}
+	}
+
+	.info-box{
+		@extend .box;
+
+		ul{
+			li{
+				font-size: 0.8em;
+				margin-bottom: 0.5em;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* Fonts and Typography */
+.tiny{
+	font-size: 0.5em;
 }
