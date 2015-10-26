@@ -12,8 +12,7 @@ body{
 	background-color: $paleBack;
 
 	font-family: 'Source Sans Pro', sans-serif;
-	width: 100%;
-	overflow: hidden;
+	width: 99%;
 
 	.flex-container{
 		@extend .flex;
@@ -32,6 +31,7 @@ body{
 }
 
 .nav{
+	background-color: $paleBack;
 	letter-spacing: 0.1em;
 	position: fixed;
 	top: 0;
@@ -46,7 +46,7 @@ body{
 		width: 100%;
 		li{
 			display: inline-block;
-			padding: 1% 2%;
+			padding: 0.8% 2%;
 			text-transform: uppercase;
 
 			&:last-child{
@@ -110,6 +110,21 @@ body{
 				}
 			}
 		}
+	}
+}
+
+.section{
+	width: 100%;
+	h3{
+		font-family: 'Muli', sans-serif;
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+		padding: 3% 5%;
+	}
+
+	.content{
+		margin: 0 auto;
+		padding: 5%;
 	}
 }
 
