@@ -44,11 +44,10 @@ body{
 	ul{
 		li{
 			display: inline-block;
-			margin-right: 2em;
+			padding: 1% 3%;
 			text-transform: uppercase;
 
 			&:last-child{
-				margin-right: 0;
 			}
 
 			&:hover{
@@ -70,7 +69,7 @@ body{
 }
 
 .header{
-	background: url(../images/ink-vinyl-blue-2.png) right/contain no-repeat;
+	background: url(../images/ink-vinyl-blue-crop.png) right/contain no-repeat;
 
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
