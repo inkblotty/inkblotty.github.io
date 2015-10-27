@@ -46,7 +46,7 @@ body{
 		width: 100%;
 		li{
 			display: inline-block;
-			padding: 0.8% 2%;
+			padding: 0.5% 2%;
 			text-transform: uppercase;
 
 			&:last-child{
@@ -125,6 +125,21 @@ body{
 	.content{
 		margin: 0 auto;
 		padding: 5%;
+
+		.subhead{
+			font-family: 'Muli', sans-serif;
+			font-size: 1.2em;
+			letter-spacing: 0.1em;
+			padding: 2% 4%;
+			text-align: center;
+		}
+
+		.work-img{
+			width: 60%;
+		}
+		.p{
+			width: 35%;
+		}
 	}
 }
 
