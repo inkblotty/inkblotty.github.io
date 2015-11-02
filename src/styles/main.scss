@@ -2,7 +2,7 @@
 
 $mainText: #000;
 $darkBlue: #3616c5;
-
+$darkerBlue: #0E0851;
 $paleBack: #f4f4f4;
 
 // main page styles
@@ -158,6 +158,35 @@ a{
 
   	.flex-container{
   		flex-wrap: nowrap;
+  		justify-content: center;
+  	}
+
+  	.project{
+  		margin: 2% 1%;
+
+  		img{
+  			width: 100%;
+  		}
+
+  		.box{
+  			margin-top: 1em;
+  			padding: 4% 6%;
+  			text-align: center;
+
+  			.line{
+  				background-color: $mainText;
+  				height: 1px;
+  				margin: 0 auto 1em auto;
+  				width: 80%;
+  			}
+
+  			.proj-title{
+  				font-family: 'Muli', sans-serif;
+  				font-size: 1.1em;
+  				font-weight: 300;
+  				margin-bottom: 0.5em;
+  			}
+  		}
   	}
   }
   
