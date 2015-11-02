@@ -117,7 +117,7 @@ body{
 	width: 100%;
 	div{padding:0; margin: 0}
 
-	h3{ border: 1px solid red;
+	h3{// border: 1px solid red;
 		font-family: 'Muli', sans-serif;
 		font-size: 1.5em;
 		font-weight: 300;
@@ -130,7 +130,7 @@ body{
 		margin: 0 auto;
 		padding: 5%;
 
-		.subhead{ border: 1px solid green;
+		.subhead{// border: 1px solid green;
 			font-family: 'Muli', sans-serif;
 			font-size: 1.2em;
 			letter-spacing: 0.1em;
@@ -161,7 +161,7 @@ a{
   		justify-content: center;
   	}
 
-  	.project{
+  	.project{ //border: 1px solid blue;
   		margin: 2% 1%;
 
   		img{
@@ -191,7 +191,7 @@ a{
   }
   
   .client-work{
-  	border: 1px solid orange;
+  	//border: 1px solid orange;
   	margin: 2% 0;
 
   	.flex-container{
@@ -215,6 +215,20 @@ a{
 			margin-top: 1%;
 		}
 	}
+  }
+
+  .livestream{
+
+  	img{
+  		width: 100%;
+  	}
+
+  	p{
+  		@extend .box;
+  		font-size: 1.3em;
+  		padding: 2% 3%;
+  		text-align: center;
+  	}
   }
 }
 
