@@ -15,10 +15,10 @@
 	<div class="nav">
 		<div class="flex-container">
 			<ul>
-				<li>Work</li>
-				<li>Blog</li>
-				<li>Resumé</li>
-				<li>Contact</li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#about">About</a></li>
+				<!--<li><a href="popUp(#resume)">Resumé</a></li>-->
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 		<div class="underline"></div>
@@ -35,17 +35,24 @@
 			</ul>
 		</div>
 	</div>
+
+	<div class="about section" id="about">
+		<h3>About</h3>
+		<div class="content about-content">
+			<p>Stuff</p>
+		</div>
+	</div>
 	
-	<div class="work section">
+	<div class="work section" id="work">
 		<h3>Work</h3>
 		<div class="content work-content">
-			<div class="portfolio">
+			<div class="flex-container portfolio">
 				<div class="subhead">Recent Projects</div>
 				<div class="flex-container">
 				</div>
 			</div>
 
-			<div class="client-work">
+			<div class="flex-container client-work">
 				<div class="subhead">Client Work</div>
 				<div class="flex-container">
 					<a href="http://naomihaverland.com/index.html"><img src="images/naomiAllDevices.png" alt="devices with previous client work shown" class="work-img"></a>
@@ -61,15 +68,16 @@
 		</div>
 	</div>
 
-	<div class="contact section">
+	<div class="contact section" id="contact">
 		<h3>Contact</h3>
 		<div class="content contact-content flex-container">
 			<ul>
-				<li><a href="https://twitter.com/katInkBlot" class="icon fa fa-twitter-square"></a></li>
-				<li><a href="https://github.com/inkblotty" class="icon fa fa-github-square"></a></li>
-				<li><a href="https://www.linkedin.com/in/kathleenafoster" class="icon fa fa-linkedin-square"></a></li>
-				<li><a href="http://codepen.io/inkblotty/" class="icon fa fa-codepen"></a></li>
-				<li><a href="https://www.livecoding.tv/inkblotty/" class="icon"><img src="images/livecodingtv_logo_sq.png" alt="livecoding.tv logo and link"></a></li>
+				<li><a href="#"><i class="icon fa fa-envelope"></i></a></li>
+				<li><a href="https://twitter.com/katInkBlot"><i class="icon fa fa-twitter"></i></a></li>
+				<li><a href="https://github.com/inkblotty"><i class="icon fa fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/kathleenafoster"><i class="icon fa fa-linkedin"></i></a></li>
+				<li><a href="http://codepen.io/inkblotty/"><i class="icon fa fa-codepen"></i></a></li>
+				<li><a href="https://www.livecoding.tv/inkblotty/"><i class="icon fa fa-television"></i></a></li>
 			</ul>
 		</div>
 	</div>
