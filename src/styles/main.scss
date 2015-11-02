@@ -122,7 +122,7 @@ body{
 		font-size: 1.5em;
 		font-weight: 300;
 		letter-spacing: 0.1em;
-		margin: 0;
+		margin: 0 0 -5% 0;
 		padding: 1% 5%;
 	}
 
@@ -170,8 +170,10 @@ a{
 
   		.box{
   			margin-top: 1em;
-  			padding: 4% auto;
+  			padding-top: 4%;
+  			padding-bottom: 4%;
   			text-align: center;
+  			width: 100%;
 
   			.line{
   				background-color: $mainText;
@@ -235,7 +237,12 @@ a{
 .contact{
 	background-color: #0E0851;
 	color: $paleBack;
+	margin: 0 auto;
 	width: 100%;
+
+	h3{
+		padding-top: 3%;
+	}
 
 	ul{
 		li{
@@ -256,4 +263,8 @@ a{
 			}
 		}
 	}
+}
+
+.resume{
+	display: none;
 }
