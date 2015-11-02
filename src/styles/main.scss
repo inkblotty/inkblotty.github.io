@@ -154,18 +154,38 @@ a{
 
 /* Section Specific Styles */
 .work{
+  .portfolio{
+
+  	.flex-container{
+  		flex-wrap: nowrap;
+  	}
+  }
+  
   .client-work{
+  	border: 1px solid orange;
+  	margin: 2% 0;
+
+  	.flex-container{
+  	  flex-wrap: nowrap;
+  	}
 	.work-img{
-			width: 66%;
+		flex-shrink: 2;
+		margin: 0;
+		width: 85%;
+	}
+	p{
+		@extend .box;
+		flex-shrink: 1;
+		font-size: 1.3em;
+		height: 100%;
+		margin: 0;
+		padding: 5% 4%;
+		width: 50%;
+
+		.qu-author{
+			margin-top: 1%;
 		}
-		p{
-			@extend .box;
-			font-size: 1.3em;
-			height: 100%;
-			margin: 0 1%;
-			padding: 5% 2%;
-			width: 24%;
-		}
+	}
   }
 }
 
