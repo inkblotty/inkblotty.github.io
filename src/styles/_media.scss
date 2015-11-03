@@ -54,6 +54,18 @@ $smaller: 320px;
   	margin-top: 25%;
   }
 
+  .work{
+  	background-color: #000;
+  	.portfolio{
+  	  .flex-container{
+  		flex-wrap: wrap;
+	  }
+  	}
+  	.projects{
+  		width: 100%;
+  	}
+  }
+
   }
 }
 
