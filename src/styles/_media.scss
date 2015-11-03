@@ -1,0 +1,37 @@
+/* Media Queries */
+
+// max widths based on twitter's bootstrap media queries
+$larger: 1200px;
+$desktop: 992px;
+$tablet: 768px;
+$mobile: 480px;
+$smaller: 320px;
+
+// extra large devices
+@media only screen and(max-width: $larger){
+
+}
+
+// standard desktop
+@media only screen and (max-width: $desktop){
+
+}
+
+// standard tablet
+@media only screen and (max-width: $tablet){
+  .header{
+  	span{
+  		display: block;
+  	}
+  }
+}
+
+// standard mobile
+@media only screen and (max-width: $mobile){
+
+}
+
+// extra small devices
+@media only screen and (max-width: $smaller){
+
+}
