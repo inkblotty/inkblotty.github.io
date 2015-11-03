@@ -156,19 +156,28 @@ a{
 .about{
 	.content{
 		p{
-			font-size: 1.1em;
+			font-size: 1.2em;
+			letter-spacing: 0.05em;
+			margin-left: 2%;
 		}
 
 		.skill-box{
 	      @extend .box;
+	      font-family: 'Muli', sans-serif;
 	      font-size: 1.2em;
+	      letter-spacing: 0.1em;
 	      margin-top: 3%;
 	      margin-left: 2%;
 	      width: 10em;
 
 		  h5{
-			font-family: 'Muli', sans-serif;
 			margin-bottom: -5%;
+		  }
+
+		  ul{
+		  	li{
+		  		font-weight: 300;
+		  	}
 		  }
 		}
 	}
