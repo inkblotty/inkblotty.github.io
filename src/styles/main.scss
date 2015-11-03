@@ -2,14 +2,17 @@
 
 $mainText: #000;
 $darkBlue: #3616c5;
+$darkerBlue: #0E0851;
+$paleBack: #f4f4f4;
 
 // main page styles
 *{transition: all 0.2s};
 
 body{
+	background-color: $paleBack;
+
 	font-family: 'Source Sans Pro', sans-serif;
-	width: 100%;
-	overflow: hidden;
+	width: 99%;
 
 	.flex-container{
 		@extend .flex;
@@ -28,26 +31,28 @@ body{
 }
 
 .nav{
+	background-color: $paleBack;
 	letter-spacing: 0.1em;
 	position: fixed;
 	top: 0;
 	width: 100%;
 
 	&:hover .underline{
-		width: 22em;
+		width: 25em;
 	}
 
 	ul{
+		text-align: center;
+		width: 100%;
 		li{
 			display: inline-block;
-			margin-right: 2em;
+			padding: 0.5% 2%;
 			text-transform: uppercase;
 
 			&:last-child{
-				margin-right: 0;
 			}
 
-			&:hover{
+			a:hover{
 				color: $darkBlue;
 				cursor: pointer;
 			}
@@ -66,7 +71,7 @@ body{
 }
 
 .header{
-	background: url(../images/ink-pic-blue.png) right/contain no-repeat;
+	background: url(../images/ink-vinyl-blue-crop.png) right/contain no-repeat;
 
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
@@ -108,7 +113,197 @@ body{
 	}
 }
 
+.section{
+	width: 100%;
+	div{padding:0; margin: 0}
+
+	h3{// border: 1px solid red;
+		font-family: 'Muli', sans-serif;
+		font-size: 1.5em;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		margin: 0 0 -5% 0;
+		padding: 1% 5%;
+	}
+
+	.content{
+		margin: 0 auto;
+		padding: 5%;
+
+		.subhead{// border: 1px solid green;
+			font-family: 'Muli', sans-serif;
+			font-size: 1.2em;
+			letter-spacing: 0.1em;
+			margin: 0;
+			padding: 2% 4%;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
 /* Fonts and Typography */
 .tiny{
 	font-size: 0.5em;
+}
+
+a{
+	color: $mainText;
+	text-decoration: none;
+}
+
+/* Section Specific Styles */
+.about{
+	.content{
+		p{
+			font-size: 1.2em;
+			letter-spacing: 0.05em;
+			margin-left: 2%;
+		}
+
+		.skill-box{
+	      @extend .box;
+	      font-family: 'Source Sans Pro', sans-serif;
+	      font-size: 1.2em;
+	      letter-spacing: 0.1em;
+	      margin-top: 3%;
+	      margin-left: 4%;
+	      width: 15em;
+
+		  h5{
+		  	font-family: 'Muli', sans-serif;
+		  	font-size: 1.1em;
+		  	font-weight: 300;
+			margin-bottom: -5%;
+		  }
+
+		  ul{
+		  	li{
+		  		font-weight: 300;
+		  		margin-left: 0.5em;
+		  	}
+		  }
+		}
+	}
+}
+
+.work{
+  .row{ 
+	padding-right: 5%;
+	padding-left: 5%;
+  }
+
+  .portfolio{
+
+  	.flex-container{
+  		flex-wrap: nowrap;
+  		justify-content: center;
+  	}
+
+  	.project{ //border: 1px solid blue;
+  		margin: 2% 2%;
+
+  		img{
+  			width: 100%;
+  		}
+
+  		.box{
+  			margin-top: 1em;
+  			padding-top: 4%;
+  			padding-bottom: 4%;
+  			text-align: center;
+  			width: 100%;
+
+  			.line{
+  				background-color: $mainText;
+  				height: 1px;
+  				margin: 0 auto 1em auto;
+  				width: 80%;
+  			}
+
+  			.proj-title{
+  				font-family: 'Muli', sans-serif;
+  				font-size: 1.1em;
+  				font-weight: 300;
+  				margin-bottom: 0.5em;
+  			}
+  		}
+  	}
+  }
+  
+  .client-work{
+  	//border: 1px solid orange;
+  	margin: 4% 0;
+
+  	.flex-container{
+  	  flex-wrap: nowrap;
+  	}
+	.work-img{
+		flex-shrink: 2;
+		margin: 0;
+		width: 85%;
+	}
+	p{
+		@extend .box;
+		flex-shrink: 1;
+		font-size: 1.3em;
+		height: 100%;
+		margin: 0;
+		padding: 5% 4%;
+		width: 50%;
+
+		.qu-author{
+			margin-top: 1%;
+		}
+	}
+  }
+
+  .livestream{
+
+  	img{
+  		width: 100%;
+  	}
+
+  	p{
+  		@extend .box;
+  		font-size: 1.3em;
+  		padding: 2% 3%;
+  		text-align: center;
+  	}
+  }
+}
+
+.contact{
+	background-color: #0E0851;
+	color: $paleBack;
+	margin: 0 auto;
+	width: 100%;
+
+	h3{
+		padding-top: 3%;
+	}
+
+	ul{
+		li{
+			display: inline-block;
+			margin-right: 1em;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				color: $paleBack;
+				padding: 1em;
+			}
+
+			.icon{
+				font-size: 4em;
+			}
+		}
+	}
+}
+
+.resume{
+	display: none;
 }
