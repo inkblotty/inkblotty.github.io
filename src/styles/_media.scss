@@ -19,10 +19,41 @@ $smaller: 320px;
 
 // standard tablet
 @media only screen and (max-width: $tablet){
+  body{
+  	font-size: 1.1em;
+
   .header{
-  	span{
-  		display: block;
+  	margin-top: 10%;
+  	h1{
+      font-size: 1.7em;
+      margin: 0 auto;
+  	  width: 100%;
+  	  .desk-span{display:none};
   	}
+
+  	.mobile-div{
+  	  	display: block;
+  	  	font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		line-height: 3em;
+		margin-left: 2em;
+		text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+  		
+  		span{
+  			margin-right: 2%;
+  		}
+  	}
+
+  	.info-box{
+  		margin-top: 26%;
+  		padding: 3% 5%;
+  	}
+  }
+
+  .about{
+  	margin-top: 25%;
+  }
+
   }
 }
 

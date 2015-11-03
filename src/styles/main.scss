@@ -1,5 +1,4 @@
 @import 'extensions';
-@import 'media';
 
 $mainText: #000;
 $darkBlue: #3616c5;
@@ -8,6 +7,7 @@ $paleBack: #f4f4f4;
 
 // main page styles
 *{transition: all 0.2s};
+.mobile-div{display: none;}
 
 body{
 	background-color: $paleBack;
@@ -86,6 +86,7 @@ body{
 	h1{
 		letter-spacing: 0.2em;
 		margin: 0 0 5% 8%;
+		text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
 
 		span{
 			font-family: 'Muli', sans-serif;
@@ -308,3 +309,5 @@ a{
 .resume{
 	display: none;
 }
+
+@import 'media';
