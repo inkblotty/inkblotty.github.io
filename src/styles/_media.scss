@@ -55,15 +55,49 @@ $smaller: 320px;
   }
 
   .work{
-  	background-color: #000;
   	.portfolio{
   	  .flex-container{
   		flex-wrap: wrap;
 	  }
-  	}
-  	.projects{
+  	  .project{
+  		margin-bottom: 5em;
   		width: 100%;
+
+  		&:last-child{
+  			margin-bottom: 0;
+  		}
+
+  		.box{
+  			margin-top: 0;
+  		}
+  	  }
   	}
+
+  	.client-work{
+  		.flex-container{
+  			flex-wrap: wrap;
+  		}
+
+  		.work-img{
+  			margin: 5% auto;
+  			width: 100%;
+  		}
+
+  		p{
+  			padding: 5% 7%;
+  			width: 100%;
+  		}
+  	}
+  }
+
+  .contact{
+	ul{
+		li{
+			.icon{
+				font-size: 3em;
+			}
+		}
+	}
   }
 
   }
@@ -71,7 +105,35 @@ $smaller: 320px;
 
 // standard mobile
 @media only screen and (max-width: $mobile){
+	body{
+		font-size: 0.9em;
 
+		.header{
+			.info-box{
+				font-size: 0.8em;
+				margin: 7em auto;
+			}
+		}
+
+		.section{
+			margin-bottom: 8%;
+		}
+
+		.work{
+			.portfolio{
+				.project{
+					margin-bottom: 2em;
+				}
+			}
+		}
+
+		.contact{
+			.icon{
+				font-size: 1.8em;
+				margin-bottom: 0.5em;
+			}
+		}
+	}
 }
 
 // extra small devices
