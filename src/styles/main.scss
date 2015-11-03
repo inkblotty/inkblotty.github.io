@@ -153,7 +153,33 @@ a{
 }
 
 /* Section Specific Styles */
+.about{
+	.content{
+		p{
+			font-size: 1.1em;
+		}
+
+		.skill-box{
+	      @extend .box;
+	      font-size: 1.2em;
+	      margin-top: 3%;
+	      margin-left: 2%;
+	      width: 10em;
+
+		  h5{
+			font-family: 'Muli', sans-serif;
+			margin-bottom: -5%;
+		  }
+		}
+	}
+}
+
 .work{
+  .row{ 
+	padding-right: 5%;
+	padding-left: 5%;
+  }
+
   .portfolio{
 
   	.flex-container{
