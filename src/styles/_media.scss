@@ -1,7 +1,7 @@
 /* Media Queries */
 
 // max widths based on twitter's bootstrap media queries
-$larger: 1200px;
+$larger: 1280px;
 $desktop: 992px;
 $tablet: 768px;
 $mobile: 480px;
@@ -9,12 +9,31 @@ $smaller: 320px;
 
 // extra large devices
 @media only screen and(max-width: $larger){
+  .work{
+    .client-work{
+      .flex-container{
+        flex-wrap: wrap;
+      }
 
+      .work-img{
+        margin: 5% auto;
+        width: 100%;
+      }
+
+      p{
+        padding: 5% 7%;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // standard desktop
 @media only screen and (max-width: $desktop){
-
+  body{
+    font-size: 1em;
+    width: 100%;
+  }
 }
 
 // standard tablet

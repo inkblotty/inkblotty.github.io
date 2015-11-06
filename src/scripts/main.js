@@ -1,5 +1,5 @@
 // JavaScript stuff
-
+/*
 var resumeLink = document.getElementById('resume-link');
 var resumeObj = document.getElementById('resume');
 
@@ -10,3 +10,4 @@ function popOver(element) {
 resumeLink.onclick = function(){
     popOver(resumeObj);
 };
+*/
