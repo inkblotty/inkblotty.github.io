@@ -201,10 +201,15 @@ a{
   	.flex-container{
   		flex-wrap: nowrap;
   		justify-content: center;
+  	
+			&.projects-container{
+				flex-wrap: wrap;
+			}
   	}
 
   	.project{ //border: 1px solid blue;
   		margin: 2% 2%;
+  		width: 25%;
 
   		img{
   			width: 100%;
