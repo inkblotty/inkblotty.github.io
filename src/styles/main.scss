@@ -158,10 +158,15 @@ a{
 /* Section Specific Styles */
 .about{
 	.content{
+
 		p{
 			font-size: 1.2em;
 			letter-spacing: 0.05em;
 			margin-left: 2%;
+		}
+
+		.skills {
+			align-items: flex-start;
 		}
 
 		.skill-box{
