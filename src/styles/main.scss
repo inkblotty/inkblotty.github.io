@@ -4,6 +4,7 @@ $mainText: #000;
 $darkBlue: #3616c5;
 $darkerBlue: #0E0851;
 $paleBack: #f4f4f4;
+$lightBlue: #aea1e7;
 
 // main page styles
 *{transition: all 0.2s};
@@ -14,6 +15,8 @@ body{
 	background-color: $paleBack;
 
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
 	width: 99%;
 
 	.flex-container{
@@ -208,13 +211,25 @@ a{
   		justify-content: center;
   	
 			&.projects-container{
+				align-content: flex-start;
+				align-items: flex-start;
 				flex-wrap: wrap;
 			}
   	}
 
   	.project{ //border: 1px solid blue;
+  		cursor: pointer;
   		margin: 2% 2%;
   		width: 25%;
+
+  		&:hover {
+  			.box {
+  				box-shadow: 2px 2px 4px $lightBlue;
+  			}
+  			img {
+  				box-shadow: 2px 2px 4px $lightBlue;
+  			}
+  		}
 
   		img{
   			width: 100%;
@@ -286,19 +301,27 @@ a{
   }
 }
 
-.contact{
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	background-color: #0E0851;
 	color: $paleBack;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 
 	h3{
 		padding-top: 3%;
+		width: 100%;
 	}
 
-	ul{
-		li{
-			display: inline-block;
+	.contact-content {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+
+		div {
 			margin-right: 1em;
 
 			&:last-child{
@@ -308,6 +331,11 @@ a{
 			a{
 				color: $paleBack;
 				padding: 1em;
+
+				&:hover {
+					color: $lightBlue;
+					transition: 0.1s ease all;
+				}
 			}
 
 			.icon{

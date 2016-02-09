@@ -147,10 +147,12 @@ $smaller: 320px;
 		}
 
 		.contact{
-			.icon{
-				font-size: 1.8em;
-				margin-bottom: 0.5em;
-			}
+      .contact-content {
+        .icon{
+          font-size: 1.8em;
+          margin-bottom: 0.5em;
+        }
+      }
 		}
 	}
 }
