@@ -1,10 +1,10 @@
-@import 'extensions';
-
 $mainText: #000;
 $darkBlue: #3616c5;
 $darkerBlue: #0E0851;
 $paleBack: #f4f4f4;
 $lightBlue: #aea1e7;
+
+@import '_extensions';
 
 // main page styles
 *{transition: all 0.2s};
@@ -17,7 +17,7 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
 	padding: 0;
-	width: 99%;
+	width: 100%;
 
 	.flex-container{
 		@extend .flex;
@@ -40,7 +40,7 @@ body{
 	letter-spacing: 0.1em;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 
 	&:hover .underline{
 		width: 25em;
@@ -185,7 +185,8 @@ a{
 		  	font-family: 'Muli', sans-serif;
 		  	font-size: 1.1em;
 		  	font-weight: 300;
-			margin-bottom: -5%;
+		  	margin-top: 1em;
+				margin-bottom: -5%;
 		  }
 
 		  ul{
@@ -217,6 +218,86 @@ a{
 			}
   	}
 
+  	.project {
+  		@extend .flex;
+
+  		//background-color: darken($paleBack, 10%);
+			height: 14em;
+			margin: 1em 0;
+			padding: 0;
+			width: 100%;
+
+			transition: 0.5s ease all;
+
+			&:hover {
+				background-color: darken($paleBack, 10%);
+				text-align: right;
+
+				h3 {
+					font-weight: 400;
+				}
+
+				#view {
+					color: $darkerBlue;
+					font-weight: 400;
+					letter-spacing: 0.2em;
+				}
+			}
+
+			a {
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+			}
+
+  		img {
+  			flex-grow: 1;
+  			height: auto;
+  			margin: 0 0 0 1em;
+  			max-height: 15em;
+  			max-width: 24em;
+				width: auto;
+  		}
+
+			.proj-box-cont {
+				display: flex;
+				align-content: center;
+				align-items: center;
+				flex-grow: 1;
+				justify-content: center;
+				text-align: center;
+				//width: 100%;
+				vertical-align: center;
+			
+  			.proj-box {
+  				@extend .box;
+
+  				flex-grow: 1;
+  				margin: 0 2em;
+  				padding: 0.5em 1em;
+  				min-width: 15em;
+
+  				h3 {
+  					margin: 0.25em 0;
+  					padding: 0;
+  					text-align: left;
+  				}
+
+  				.details {
+  					color: lighten(#000, 60%);
+  					margin: 0 0.5em 0 0;
+  					text-align: right;
+
+  					&:first-child {
+  						margin: 0.5em 0 0 0;
+  						text-align: left;
+  					}
+  				}
+  			}
+  		}
+  	}
+
+		/* old styles
   	.project{ //border: 1px solid blue;
   		cursor: pointer;
   		margin: 2% 2%;
@@ -256,7 +337,7 @@ a{
   				margin-bottom: 0.5em;
   			}
   		}
-  	}
+  	}*/
   }
   
   .client-work{
@@ -319,14 +400,15 @@ a{
 	.contact-content {
 		display: flex;
 		flex-wrap: nowrap;
+		justify-content: space-around;
 		width: 100%;
 
 		div {
-			margin-right: 1em;
+			/*margin-right: 1em;
 
 			&:last-child{
 				margin-right: 0;
-			}
+			}*/
 
 			a{
 				color: $paleBack;

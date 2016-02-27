@@ -1,0 +1,27 @@
+body {
+	color: #0E0851;
+	font-family: sans-serif;
+}
+
+.header {
+	letter-spacing: 0.2em;
+	padding: 5% 10%;
+}
+
+h1 {
+	font-size: 5em;
+	color: #0E0851;
+	background: url('http://dc647.4shared.com/img/IDlB-3nn/s7/13d19d8abd8/watercolor-grunge-000042-gradi') repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: 0.3em;
+	text-align: right;
+}
+
+h2 {
+	font-size: 4em;
+}
+
+h4 {
+	font-size: 3em;
+}
