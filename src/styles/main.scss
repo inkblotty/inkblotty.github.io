@@ -221,7 +221,7 @@ a{
   	.project {
   		@extend .flex;
 
-  		//background-color: darken($paleBack, 10%);
+  		cursor: pointer;
 			height: 14em;
 			margin: 1em 0;
 			padding: 0;
