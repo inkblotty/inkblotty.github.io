@@ -378,6 +378,28 @@ a{
   }
 }
 
+.clients {
+	.quotes {
+		@extend .flex;
+		justify-content: center;
+		width: 100%;
+		
+		.quote {
+			@extend .box;
+			font-size: 1.1em;
+			letter-spacing: 0.06em;
+			margin: 1em 0;
+			padding-bottom: 1em;
+			width: 80%;
+
+			.author {
+				font-family: Muli, sans-serif;
+				text-align: right;
+			}
+		}
+	}
+}
+
 .contact {
 	display: flex;
 	flex-wrap: wrap;
