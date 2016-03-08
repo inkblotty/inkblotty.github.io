@@ -19,3 +19,18 @@ $("a[href^='#']").click(function(e) {
 	$('html,body').animate({
 		scrollTop: $(dest).offset().top-100}, 'slow');
 });
+
+$.ajax({
+	method: 'GET',
+	contentType: "application/json; charset=utf-8",
+	url: "http://lctva.joel.io/api/online/inkblotty"
+})
+	.done(function(data) {
+		console.log('retrieved data');
+		if (data) {
+			$('#stream').html('online');
+		}
+		else {
+			$('#stream').html('offline');
+		}
+	});

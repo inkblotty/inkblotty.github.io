@@ -1,1 +1,1 @@
-$("a[href^='#']").click(function(t){t.preventDefault();var e=$(this).attr("href");$("html,body").animate({scrollTop:$(e).offset().top-100},"slow")});
+$("a[href^='#']").click(function(t){t.preventDefault();var o=$(this).attr("href");$("html,body").animate({scrollTop:$(o).offset().top-100},"slow")}),$.ajax({method:"GET",contentType:"application/json; charset=utf-8",url:"http://lctva.joel.io/api/online/inkblotty"}).done(function(t){t?$("#stream").html("online"):$("#stream").html("offline")});
