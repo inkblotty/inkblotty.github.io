@@ -20,17 +20,30 @@ $("a[href^='#']").click(function(e) {
 		scrollTop: $(dest).offset().top-100}, 'slow');
 });
 
+/*
+var settings = {
+	async: true,
+	crossDomain: true,
+	url: "http://lctva.joel.io/api/online/inkblotty",
+	method: "GET",
+	success: function() {
+		console.log('success!');
+	}
+};*/
+
 $.ajax({
-	method: 'GET',
-	contentType: "application/json; charset=utf-8",
-	url: "http://lctva.joel.io/api/online/inkblotty"
-})
-	.done(function(data) {
-		console.log('retrieved data');
-		if (data) {
-			$('#stream').html('online');
-		}
-		else {
-			$('#stream').html('offline');
-		}
-	});
+	async: true,
+	contentType: 'application/json',
+	crossDomain: true,
+	url: "http://lctva.joel.io/api/online/inkblotty/",
+	method: "GET",
+	success: function() {
+		console.log('success!');
+	},
+	complete: function(xhr, textStatus) {
+		console.log(xhr.status);
+	}
+}).done(function(response) {
+	console.log('thingy');
+	console.log(response);
+});
