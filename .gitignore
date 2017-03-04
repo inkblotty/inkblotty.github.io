@@ -4,3 +4,5 @@
 node_modules/*
 .db
 .DS_Store
+.sublime-workspace
+.sublime-project
