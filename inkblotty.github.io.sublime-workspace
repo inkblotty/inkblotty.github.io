@@ -115,6 +115,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/index.html",
+			"settings":
+			{
+				"buffer_size": 6758,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -166,7 +175,8 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/katief/Documents/inkblotty.github.io"
+		"/Users/katief/Documents/inkblotty.github.io",
+		"/Users/katief/Documents/inkblotty.github.io/src"
 	],
 	"file_history":
 	[
@@ -460,8 +470,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6071,
+								6071
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
